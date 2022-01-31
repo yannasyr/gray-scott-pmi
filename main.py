@@ -3,7 +3,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-import random as rd
 import initialisation #programme py annexe pour générer 
                       #des images contenant des pattern aléatoires 
                       #suivant une distribution gaussienne 
@@ -57,7 +56,7 @@ def main(feed,kill,Du,Dv):
 	plt.figure()
 	
 	for k in range(nb_iter):
-		update_etat(A,B,Du,Dv,feed,kill,dt)
+		update_etat(U,V,Du,Dv,feed,kill,dt)
 		if k % frame== 0:
 			# filename = "Uframe_{:02d}.png".format(k//frame) 
 			# print(filename)
